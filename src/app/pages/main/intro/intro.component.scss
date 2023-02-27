@@ -6,11 +6,46 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 1.5625vw;
+  gap: 1.23107vw;
 
   .block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    padding: 1.640625vw;
+
+    .title {
+      align-self: center;
+    }
+
     width: 22.265625vw;
     height: 20.703125vw;
+  }
+
+  .clickable {
+    transition: 0.2s;
+
+    a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-decoration: none;
+      width: 100%;
+      height: 100%;
+    }
+
+    &:hover {
+      transform: scale(1.05);
+      transition: 0.2s;
+
+      .description .arrow {
+        transform: rotate(45deg);
+        transition: 0.2s;
+      }
+    }
   }
 
   .name,
@@ -18,27 +53,171 @@
     width: 46.09375vw;
   }
 
+  .achievements,
+  .work,
+  .projects,
+  .youtube a,
+  .what-i-do {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .title,
+    .image {
+      display: flex;
+      align-items: flex-end;
+      height: 50%;
+
+      p {
+        font-size: 2.6953125vw;
+        text-align: end;
+      }
+    }
+
+    .description {
+      width: 100%;
+      display: flex;
+
+      p {
+        margin-left: 0.5208333333333334vw;
+        color: rgba(109, 181, 168, 1);
+      }
+
+      .arrow {
+        transition: 0.2s;
+        svg {
+          width: 1.0416666666666667vw;
+          height: 1.0416666666666667vw;
+        }
+
+        margin-left: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+
+  .title p {
+    font-weight: 700;
+    font-size: 3.28125vw;
+    color: rgba(81, 81, 81, 0.8);
+  }
+
+  .description p {
+    font-size: 1.5625vw;
+  }
+
   .name {
     background-color: $blue;
+
+    .description {
+      p {
+        text-align: center;
+        color: rgba(134, 134, 139, 0.7);
+      }
+      margin-top: 0.78125vw;
+    }
   }
 
   .achievements {
     background-color: $light-blue;
+    .title {
+      height: 44%;
+    }
   }
 
   .work {
     background-color: $green;
+
+    .image {
+      img {
+        width: 17.65625vw;
+        height: 5.15625vw;
+      }
+    }
+
+    .description p {
+      color: rgba(109, 181, 125, 1);
+    }
   }
 
   .projects {
     background-color: $yellow;
+
+    .title {
+      height: 41.5%;
+      img {
+        width: 3vw;
+        height: 3vw;
+      }
+    }
+
+    .description p {
+      color: rgba(181, 174, 109, 1);
+    }
   }
 
   .youtube {
+    padding: 0;
     background-color: $red;
+
+    a {
+      .image img {
+        width: 9.140625vw;
+        height: 6.40625vw;
+      }
+
+      .description {
+        padding: 0 2.34375vw 1.5625vw 2.34375vw;
+        p {
+          color: rgba(181, 109, 109, 1);
+        }
+      }
+    }
   }
 
   .what-i-do {
     background-color: $purple;
+
+    .title {
+      align-items: flex-start;
+
+      p {
+        font-size: 2.6875vw;
+      }
+    }
+    .description {
+      .list {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+        .item {
+          background-color: rgba(233, 223, 255, 1);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          width: 13.125vw;
+          height: 11.171875vw;
+
+          box-shadow: 0 0.3125vw 1.40625vw rgba(0, 0, 0, 0.05);
+
+          transition: 0.2s;
+
+          p {
+            color: rgba(132, 109, 181, 1);
+            font-size: 2.1875vw;
+          }
+
+          &:hover {
+            box-shadow: 0 0.3125vw 3.515625vw rgba(0, 0, 0, 0.1);
+            transform: scale(1.05);
+            transition: 0.2s;
+          }
+        }
+      }
+    }
   }
 }

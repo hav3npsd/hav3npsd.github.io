@@ -8,10 +8,16 @@ html,
 body {
   width: 100%;
   height: 100%;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
 }
 
 .rounded {
   border-radius: 2.34375vw;
+}
+
+.line-text {
+  line-height: 2.65625vw;
 }
 
 .mtdef {
