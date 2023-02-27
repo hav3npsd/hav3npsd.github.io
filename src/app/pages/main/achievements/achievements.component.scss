@@ -1,7 +1,64 @@
 @import "variables";
 
 .content {
+  display: flex;
+  justify-content: space-between;
   width: 100%;
   height: 14.609375vw;
-  background-color: $light-blue;
+  background-color: $blue-light;
+  padding: 2.5vw 2.34375vw;
+
+  .left,
+  .right {
+    width: 46%;
+
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.78125vw;
+
+      li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style-type: none;
+        color: $green-dark;
+        font-size: 2.03125vw;
+      }
+
+      li:after {
+        content: "";
+        width: 1.40625vw;
+        height: 1.40625vw;
+        border-radius: 50%;
+        background: $green-dark;
+        margin-left: 0.78125vw;
+      }
+    }
+  }
+
+  .left {
+    width: 52%;
+
+    .list {
+      .item-3,
+      .item-4 {
+        &:after {
+          background: none;
+          border: 0.078125vw solid $green-dark;
+        }
+      }
+    }
+  }
+
+  .right {
+    .list {
+      .item-1 {
+        &:after {
+          background: none;
+          border: 0.078125vw solid $green-dark;
+        }
+      }
+    }
+  }
 }
