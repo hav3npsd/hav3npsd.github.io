@@ -4,14 +4,12 @@
   width: 100%;
   display: flex;
   justify-content: flex-start;
-
   padding: 2.34375vw;
   background-color: $blue;
 
   .image {
     width: 25%;
     height: 100%;
-
     margin-left: 5.46875vw;
     margin-right: 7.8125vw;
 
@@ -23,28 +21,26 @@
     }
   }
 
-  .text {
-    .title {
-      color: $grey;
-    }
+  .text .title {
+    color: $grey;
+  }
 
-    .description {
-      color: $grey-light;
-    }
+  .description {
+    color: $grey-light;
+  }
 
-    .title-1 {
-      width: 100%;
-      font-size: 3.75vw;
-      text-align: start;
-    }
+  .title-1 {
+    width: 100%;
+    font-size: 3.75vw;
+    text-align: start;
+  }
 
-    .title-2 {
-      font-size: 3.28125vw;
-    }
+  .title-2 {
+    font-size: 3.28125vw;
+  }
 
-    .description {
-      font-size: 2.03125vw;
-      margin-top: 0.390625vw;
-    }
+  .description {
+    font-size: 2.03125vw;
+    margin-top: 0.390625vw;
   }
 }
