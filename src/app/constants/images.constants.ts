@@ -6,6 +6,13 @@ enum ImageType {
   artem = 'artem',
   albina = 'albina',
   maksim = 'maksim',
+  vodovozDesktop = 'vodovozDesktop',
+  vodovozMobile = 'vodovozMobile',
+  gustavoFringGreen = 'gustavoFringGreen',
+  gustavoFringOrange = 'gustavoFringOrange',
+  gustavoFringPink = 'gustavoFringPink',
+  gustavoFringPurple = 'gustavoFringPurple',
+  gustavoFringRed = 'gustavoFringRed',
 }
 
 export const ImageList: { [key in ImageType]: ImageInfo } = {
@@ -28,5 +35,33 @@ export const ImageList: { [key in ImageType]: ImageInfo } = {
   [ImageType.maksim]: {
     link: 'assets/images/memojis/maksim.webp',
     description: 'memoji icon',
+  },
+  [ImageType.vodovozDesktop]: {
+    link: 'assets/images/project-preview/ui-ux/vodovoz-desktop.webp',
+    description: 'project preview image',
+  },
+  [ImageType.vodovozMobile]: {
+    link: 'assets/images/project-preview/ui-ux/vodovoz-mobile.webp',
+    description: 'project preview image',
+  },
+  [ImageType.gustavoFringGreen]: {
+    link: 'assets/images/project-preview/digital-art/gustavo-fring-green.webp',
+    description: 'digital art work preview image',
+  },
+  [ImageType.gustavoFringOrange]: {
+    link: 'assets/images/project-preview/digital-art/gustavo-fring-orange.webp',
+    description: 'digital art work preview image',
+  },
+  [ImageType.gustavoFringPink]: {
+    link: 'assets/images/project-preview/digital-art/gustavo-fring-pink.webp',
+    description: 'digital art work preview image',
+  },
+  [ImageType.gustavoFringPurple]: {
+    link: 'assets/images/project-preview/digital-art/gustavo-fring-purple.webp',
+    description: 'digital art work preview image',
+  },
+  [ImageType.gustavoFringRed]: {
+    link: 'assets/images/project-preview/digital-art/gustavo-fring-red.webp',
+    description: 'digital art work preview image',
   },
 };
