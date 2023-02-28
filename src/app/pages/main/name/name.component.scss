@@ -2,6 +2,45 @@
 
 .content {
   width: 100%;
-  height: 26.796875vw;
+  display: flex;
+  justify-content: flex-start;
+  padding: 2.34375vw;
   background-color: $blue;
+
+  .image {
+    width: 25%;
+    height: 100%;
+    margin-left: 5.46875vw;
+    margin-right: 7.8125vw;
+
+    img {
+      position: absolute;
+      width: 21.875vw;
+      height: 21.875vw;
+      transform: rotate(-5deg);
+    }
+  }
+
+  .text .title {
+    color: $grey;
+  }
+
+  .description {
+    color: $grey-light;
+  }
+
+  .title-1 {
+    width: 100%;
+    font-size: 3.75vw;
+    text-align: start;
+  }
+
+  .title-2 {
+    font-size: 3.28125vw;
+  }
+
+  .description {
+    font-size: 2.03125vw;
+    margin-top: 0.390625vw;
+  }
 }

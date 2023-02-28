@@ -1,1 +1,53 @@
-<div class="content rounded"></div>
+<div class="content rounded">
+  <div class="title">
+    <div class="logo">
+      <a href="https://razoom.art" target="_blank">
+        <img
+          (mouseover)="changeLogo()"
+          [src]="logo"
+          [alt]="icons.razoomart.description"
+          draggable="false"
+        />
+      </a>
+    </div>
+    <div class="description"><p>Place of work</p></div>
+  </div>
+  <div class="work-description">
+    <p>
+      We gathered in 2021, to open a next-gen <br />
+      digital studio and create fascinating <br />
+      products, which will make you love them
+      <img
+        [src]="icons.sparkles.link"
+        [alt]="icons.sparkles.description"
+        draggable="false"
+      />
+    </p>
+  </div>
+  <div class="images">
+    <img
+      class="memoji memoji-ilyaU"
+      [src]="images.ilyaU.link"
+      [alt]="images.ilyaU.description"
+      draggable="false"
+    />
+    <img
+      class="memoji memoji-artem"
+      [src]="images.artem.link"
+      [alt]="images.artem.description"
+      draggable="false"
+    />
+    <img
+      class="memoji memoji-albina"
+      [src]="images.albina.link"
+      [alt]="images.albina.description"
+      draggable="false"
+    />
+    <img
+      class="memoji memoji-maksim"
+      [src]="images.maksim.link"
+      [alt]="images.maksim.description"
+      draggable="false"
+    />
+  </div>
+</div>

@@ -2,6 +2,241 @@
 
 .content {
   width: 100%;
-  height: 87.265625vw;
   background-color: $yellow;
+  padding: 2.34375vw 1.5625vw;
+
+  .title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    p {
+      font-size: 3.75vw;
+      color: rgba(81, 81, 81, 0.8);
+    }
+
+    .image {
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        width: 3.5vw;
+        height: 3.5vw;
+      }
+    }
+  }
+
+  .work {
+    height: 27.265625vw;
+  }
+
+  .ui-ux-work,
+  .digital-art-work {
+    .title {
+      display: block;
+      width: auto;
+      margin-left: 0.78125vw;
+
+      p {
+        font-size: 3.28125vw;
+      }
+    }
+
+    .work .work-info {
+      margin-top: 5.625vw;
+    }
+  }
+
+  .ui-ux-work .work,
+  .digital-art-work .work {
+    width: 100%;
+    padding: 2.34375vw;
+    box-shadow: 0 0.3125vw 1.40625vw rgba(0, 0, 0, 0.05);
+    border-radius: 2.34375vw;
+
+    .work-title p {
+      font-size: 3.28125vw;
+      color: #b5ae6d;
+    }
+
+    .work-description,
+    .work-info {
+      p {
+        font-weight: 400;
+        font-size: 1.5625vw;
+        color: rgba(181, 174, 109, 0.6);
+      }
+
+      .work-buttons {
+        display: flex;
+        margin-top: 0.78125vw;
+        gap: 1.5625vw;
+
+        .work-btn {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 10.15625vw;
+          height: 6.09375vw;
+          background-color: #fbffdf;
+          box-shadow: 0 0.3125vw 1.40625vw rgba(0, 0, 0, 0.05);
+          border-radius: 2.34375vw;
+
+          p {
+            color: rgba(181, 174, 109, 0.8);
+            font-weight: 500;
+            font-size: 2.5vw;
+          }
+        }
+
+        .work-link {
+          width: 15.703125vw;
+
+          a {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: rgba(181, 174, 109, 0.8);
+            font-size: 2.5vw;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+
+    .work-description {
+      margin-top: 0.78125vw;
+    }
+
+    .work-info .spent {
+      margin-left: 1.09375vw;
+    }
+  }
+
+  .ui-ux-work,
+  .digital-art-work {
+    .work {
+      display: flex;
+      flex-direction: column;
+
+      .work-title,
+      .work-description,
+      .work-info {
+        width: 40%;
+      }
+    }
+  }
+
+  .ui-ux-work {
+    .work-preview {
+      position: absolute;
+      right: 0;
+
+      .preview-1 {
+        position: absolute;
+        width: 22vw;
+        height: 27vw;
+        top: -3vw;
+        right: 36.5vw;
+        z-index: 1;
+      }
+
+      .preview-2 {
+        position: absolute;
+        width: 36.09375vw;
+        height: 21.640625vw;
+        right: 10vw;
+      }
+    }
+  }
+
+  .digital-art-work {
+    .title {
+      margin-top: 3.125vw;
+    }
+
+    .work {
+      .work-preview {
+        position: absolute;
+        right: 0;
+
+        .digital-art-preview {
+          position: absolute;
+          right: 0;
+          width: 5vw;
+          height: 5vw;
+          border-radius: 2.34375vw;
+          border: 0.078125vw solid #ffffff;
+        }
+
+        .preview-1 {
+          width: 9.921875vw;
+          height: 12.421875vw;
+          right: 39.0625vw;
+          top: 2vw;
+          transform: rotate(11deg);
+        }
+
+        .preview-2 {
+          width: 9.140625vw;
+          height: 11.40625vw;
+          right: 35vw;
+          top: 8vw;
+          transform: rotate(-11deg);
+          z-index: 1;
+        }
+
+        .preview-3 {
+          width: 12.265625vw;
+          height: 15.390625vw;
+          right: 24vw;
+          top: 1vw;
+          transform: rotate(-16deg);
+        }
+
+        .preview-4 {
+          width: 10.9375vw;
+          height: 13.671875vw;
+          right: 25vw;
+          top: 10vw;
+          transform: rotate(17deg);
+          z-index: 1;
+        }
+
+        .preview-5 {
+          width: 19.53125vw;
+          height: 24.296875vw;
+          right: 6.5vw;
+          z-index: 1;
+        }
+      }
+    }
+  }
+
+  .all-projects {
+    width: 100%;
+    height: 6.171875vw;
+    border: 0.078125vw solid rgba(181, 174, 109, 0.5);
+
+    .wrapper {
+      width: 100%;
+      height: 100%;
+
+      a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        color: #b5ae6d;
+        font-size: 2.5vw;
+        text-decoration: none;
+      }
+    }
+  }
 }

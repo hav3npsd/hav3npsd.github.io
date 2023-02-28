@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IconList } from '@constants/icons.constatns';
+import { IconList } from '@constants/icons.constants';
 
 @Component({
   selector: 'app-intro',
