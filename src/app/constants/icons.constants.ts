@@ -8,14 +8,12 @@ enum IconType {
   logoAntiHype = 'logoAntiHype',
   logoDobro = 'logoDobro',
   logoDrzhk = 'logoDrzhk',
-  logoKorean = 'logoKorean',
   logoMaxfont = 'logoMaxfont',
   logoMinecraft = 'logoMinecraft',
   logoRu = 'logoRu',
   logoUwu = 'logoUwu',
   logoLove = 'logoLove',
   logoAustralian = 'logoAustralian',
-  logoAmbid = 'logoAmbid',
   logoRzmrt = 'logoRzmrt',
 }
 
@@ -48,10 +46,6 @@ export const IconList: { [key in IconType]: IconInfo } = {
     link: 'assets/icons/razoomart-logo/logo_drzhk.svg',
     description: 'razoomart logo image',
   },
-  [IconType.logoKorean]: {
-    link: 'assets/icons/razoomart-logo/logo_korean.svg',
-    description: 'razoomart logo image',
-  },
   [IconType.logoMaxfont]: {
     link: 'assets/icons/razoomart-logo/logo_maxfont.svg',
     description: 'razoomart logo image',
@@ -74,10 +68,6 @@ export const IconList: { [key in IconType]: IconInfo } = {
   },
   [IconType.logoAustralian]: {
     link: 'assets/icons/razoomart-logo/logo_australian.svg',
-    description: 'razoomart logo image',
-  },
-  [IconType.logoAmbid]: {
-    link: 'assets/icons/razoomart-logo/logo_ambid.svg',
     description: 'razoomart logo image',
   },
   [IconType.logoRzmrt]: {
