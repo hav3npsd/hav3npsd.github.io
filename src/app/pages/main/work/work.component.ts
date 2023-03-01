@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+
 import { IconList } from '@constants/icons.constants';
 import { ImageList } from '@constants/images.constants';
 import { razoomartLogoList } from '@pages/main/work/razoomartLogos.constants';
