@@ -13,6 +13,7 @@ enum ImageType {
   gustavoFringPink = 'gustavoFringPink',
   gustavoFringPurple = 'gustavoFringPurple',
   gustavoFringRed = 'gustavoFringRed',
+  wantBuyDesign = 'wantBuyDesign',
 }
 
 export const ImageList: { [key in ImageType]: ImageInfo } = {
@@ -63,5 +64,9 @@ export const ImageList: { [key in ImageType]: ImageInfo } = {
   [ImageType.gustavoFringRed]: {
     link: 'assets/images/project-preview/digital-art/gustavo-fring-red.webp',
     description: 'digital art work preview image',
+  },
+  [ImageType.wantBuyDesign]: {
+    link: 'assets/images/want-buy.webp',
+    description: 'want to buy design image',
   },
 };

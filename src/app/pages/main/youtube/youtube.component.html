@@ -1,32 +1,49 @@
 <div class="content rounded">
-  <div class="title">
-    <p>Follow me on YouTube</p>
-    <div class="image">
+  <div class="left">
+    <div class="title">
+      <p>Follow me on YouTube</p>
+      <div class="image">
+        <img
+          [src]="icons.youtube.link"
+          [alt]="icons.youtube.description"
+          draggable="false"
+        />
+      </div>
+    </div>
+    <div class="description">
+      <p>
+        On my channel there are speedarts, <br />
+        short videos about digital design
+        <img
+          [src]="icons.sparkles.link"
+          [alt]="icons.sparkles.description"
+          draggable="false"
+        />
+      </p>
+    </div>
+    <div class="btn mtdef rounded">
+      <a
+        href="https://youtube.com/shorts/r3yWeTIbaAM?feature=share"
+        target="_blank"
+      >
+        <p>View last video</p>
+      </a>
+    </div>
+  </div>
+  <div class="right">
+    <div class="images">
       <img
-        [src]="icons.youtube.link"
-        [alt]="icons.youtube.description"
+        class="image image-1 rounded"
+        [src]="images.wantBuyDesign.link"
+        [alt]="images.wantBuyDesign.description"
+        draggable="false"
+      />
+      <img
+        class="image image-2 rounded"
+        [src]="images.wantBuyDesign.link"
+        [alt]="images.wantBuyDesign.description"
         draggable="false"
       />
     </div>
   </div>
-  <div class="description">
-    <p>
-      On my channel there are speedarts, <br />
-      short videos about digital design
-      <img
-        [src]="icons.sparkles.link"
-        [alt]="icons.sparkles.description"
-        draggable="false"
-      />
-    </p>
-  </div>
-  <div class="btn mtdef">
-    <a
-      href="https://youtube.com/shorts/r3yWeTIbaAM?feature=share"
-      target="_blank"
-    >
-      <p>View last video</p>
-    </a>
-  </div>
-  <div class="images"></div>
 </div>
