@@ -1,0 +1,139 @@
+<div class="content">
+  <div class="rounded block name">
+    <div class="title"><p>Hey, I'm hav3n️</p></div>
+    <div class="description">
+      <p class="line-text">
+        Design. Junior UI/UX, Web-design & Digital Art <br />
+        Web-Development. Junior Frontend Dev.
+      </p>
+    </div>
+  </div>
+  <div
+    (click)="scrollService.scrollToElement(anchorPath.ACHIEVEMENTS)"
+    class="rounded block achievements clickable"
+  >
+    <div class="title"><p>Achievements</p></div>
+    <div class="description">
+      <p>Roadmap</p>
+      <div class="arrow">
+        <svg
+          width="18"
+          height="18"
+          viewBox="0 0 18 18"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M17.6421 1.99995C17.6421 1.17153 16.9706 0.499954 16.1421 0.499954H2.64214C1.81371 0.499954 1.14214 1.17153 1.14214 1.99995C1.14214 2.82838 1.81371 3.49995 2.64214 3.49995H14.6421V15.5C14.6421 16.3284 15.3137 17 16.1421 17C16.9706 17 17.6421 16.3284 17.6421 15.5V1.99995ZM3.06066 17.2027L17.2028 3.06061L15.0815 0.939294L0.93934 15.0814L3.06066 17.2027Z"
+            fill="#6DB5A8"
+          />
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div
+    (click)="scrollService.scrollToElement(anchorPath.WORK)"
+    class="rounded block work clickable"
+  >
+    <div class="image">
+      <img
+        [src]="icons.razoomart.link"
+        [alt]="icons.razoomart.description"
+        draggable="false"
+      />
+    </div>
+    <div class="description">
+      <p>Place of work</p>
+      <div class="arrow">
+        <svg
+          width="18"
+          height="18"
+          viewBox="0 0 18 18"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M17.6421 1.99995C17.6421 1.17153 16.9706 0.499954 16.1421 0.499954H2.64214C1.81371 0.499954 1.14214 1.17153 1.14214 1.99995C1.14214 2.82838 1.81371 3.49995 2.64214 3.49995H14.6421V15.5C14.6421 16.3284 15.3137 17 16.1421 17C16.9706 17 17.6421 16.3284 17.6421 15.5V1.99995ZM3.06066 17.2027L17.2028 3.06061L15.0815 0.939294L0.93934 15.0814L3.06066 17.2027Z"
+            fill="#6DB57D"
+          />
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div
+    (click)="scrollService.scrollToElement(anchorPath.PROJECTS)"
+    class="rounded block projects clickable"
+  >
+    <div class="title">
+      <p>Projects</p>
+      <img
+        [src]="icons.sparkles.link"
+        [alt]="icons.sparkles.description"
+        draggable="false"
+      />
+    </div>
+    <div class="description">
+      <p>Portfolio</p>
+      <div class="arrow">
+        <svg
+          width="18"
+          height="18"
+          viewBox="0 0 18 18"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M17.6421 1.99995C17.6421 1.17153 16.9706 0.499954 16.1421 0.499954H2.64214C1.81371 0.499954 1.14214 1.17153 1.14214 1.99995C1.14214 2.82838 1.81371 3.49995 2.64214 3.49995H14.6421V15.5C14.6421 16.3284 15.3137 17 16.1421 17C16.9706 17 17.6421 16.3284 17.6421 15.5V1.99995ZM3.06066 17.2027L17.2028 3.06061L15.0815 0.939294L0.93934 15.0814L3.06066 17.2027Z"
+            fill="#B5AE6D"
+          />
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="rounded block youtube clickable">
+    <a href="https://www.youtube.com/@hav3nwork/featured" target="_blank">
+      <div class="image">
+        <img
+          [src]="icons.youtube.link"
+          [alt]="icons.youtube.description"
+          draggable="false"
+        />
+      </div>
+      <div class="description">
+        <p>YouTube channel</p>
+        <div class="arrow">
+          <svg
+            width="18"
+            height="18"
+            viewBox="0 0 18 18"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M17.6421 1.99995C17.6421 1.17153 16.9706 0.499954 16.1421 0.499954H2.64214C1.81371 0.499954 1.14214 1.17153 1.14214 1.99995C1.14214 2.82838 1.81371 3.49995 2.64214 3.49995H14.6421V15.5C14.6421 16.3284 15.3137 17 16.1421 17C16.9706 17 17.6421 16.3284 17.6421 15.5V1.99995ZM3.06066 17.2027L17.2028 3.06061L15.0815 0.939294L0.93934 15.0814L3.06066 17.2027Z"
+              fill="#B56D6D"
+            />
+          </svg>
+        </div>
+      </div>
+    </a>
+  </div>
+  <div class="rounded block what-i-do">
+    <div class="title">
+      <p>What i do?</p>
+    </div>
+    <div class="description">
+      <div class="list">
+        <div class="item rounded">
+          <p>UX<br />Research</p>
+        </div>
+        <div class="item rounded">
+          <p>UI<br />Design</p>
+        </div>
+        <div class="item rounded">
+          <p>Digital<br />art</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
