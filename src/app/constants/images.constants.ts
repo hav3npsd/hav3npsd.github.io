@@ -6,6 +6,8 @@ enum ImageType {
   artem = 'artem',
   albina = 'albina',
   maksim = 'maksim',
+  nabsvHi = 'nabsvHi',
+  nabsvWork = 'nabsvWork',
   vodovozDesktop = 'vodovozDesktop',
   vodovozMobile = 'vodovozMobile',
   gustavoFringGreen = 'gustavoFringGreen',
@@ -68,5 +70,13 @@ export const ImageList: { [key in ImageType]: ImageInfo } = {
   [ImageType.wantBuyDesign]: {
     link: 'assets/images/want-buy.webp',
     description: 'want to buy design image',
+  },
+  [ImageType.nabsvHi]: {
+    link: 'assets/images/memojis/nabsv-hi.webp',
+    description: 'memoji icon',
+  },
+  [ImageType.nabsvWork]: {
+    link: 'assets/images/memojis/nabsv-work.webp',
+    description: 'memoji icon',
   },
 };

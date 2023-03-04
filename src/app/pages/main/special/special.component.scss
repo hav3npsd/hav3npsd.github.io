@@ -1,7 +1,72 @@
 @import "variables";
 
 .content {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   width: 100%;
   height: 14.921875vw;
   background-color: $purple;
+  padding: 2.34375vw;
+
+  .title p {
+    font-size: 3vw;
+    color: #846db5;
+  }
+
+  .description {
+    margin-top: 0.78125vw;
+
+    p {
+      font-weight: 400;
+      font-size: 1.4vw;
+      color: rgba(132, 109, 181, 0.5);
+    }
+  }
+
+  .button {
+    width: 18.28125vw;
+    height: 6.09375vw;
+    margin-left: auto;
+    margin-top: auto;
+    box-shadow: 0 0.3125vw 1.40625vw rgba(0, 0, 0, 0.05);
+
+    a {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #846db5;
+      text-decoration: none;
+
+      p {
+        font-size: 1.8vw;
+      }
+    }
+  }
+
+  .images {
+    position: absolute;
+    right: 0;
+
+    .image {
+      position: absolute;
+      right: 0;
+      top: -7.6vw;
+      width: 20vw;
+      height: 20.2vw;
+    }
+
+    .image-1 {
+      right: 40vw;
+    }
+
+    .image-2 {
+      right: 25vw;
+      top: -5.4vw;
+      width: 18vw;
+      height: 18vw;
+    }
+  }
 }
