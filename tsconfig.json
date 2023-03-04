@@ -7,7 +7,9 @@
     "paths": {
       "@pages/*": ["src/app/pages/*"],
       "@constants/*": ["src/app/constants/*"],
-      "@interfaces/*": ["src/app/interfaces/*"]
+      "@interfaces/*": ["src/app/interfaces/*"],
+      "@services/*": ["src/app/services/*"],
+      "@enums/*": ["src/app/enums/*"]
     },
     "forceConsistentCasingInFileNames": true,
     "strict": true,
