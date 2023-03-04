@@ -6,7 +6,6 @@
   width: 100%;
   height: 22.421875vw;
   background-color: $red;
-  padding: 2.34375vw;
 
   .left,
   .right {
@@ -16,6 +15,7 @@
   .left {
     display: flex;
     flex-direction: column;
+    padding: 2.34375vw 0 2.34375vw 2.34375vw;
 
     .title {
       display: flex;
@@ -83,31 +83,28 @@
   }
 
   .right {
-    position: absolute;
-    right: 0;
-    width: 100%;
-    height: 100%;
-
     .images {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+
       .image {
-        position: absolute;
         width: 18.203125vw;
         height: 24.609375vw;
       }
 
       .image-1 {
-        right: 32vw;
-        transform: rotate(8deg);
-        z-index: 1;
+        width: 22.734375vw;
+        height: 30.78125vw;
+        filter: blur(0.1171875vw);
+        transform: rotate(-10deg);
+        margin-top: -0.8vw;
       }
 
       .image-2 {
-        width: 22.734375vw;
-        height: 30.78125vw;
-        right: 7vw;
-        top: -2.5vw;
-        filter: blur(0.1171875vw);
-        transform: rotate(-10deg);
+        transform: rotate(15deg);
+        margin-bottom: 2vw;
+        margin-left: 2.7vw;
       }
     }
   }
