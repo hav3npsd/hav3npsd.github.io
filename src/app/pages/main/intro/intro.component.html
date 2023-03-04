@@ -8,7 +8,10 @@
       </p>
     </div>
   </div>
-  <div class="rounded block achievements clickable">
+  <div
+    (click)="scrollService.scrollToElement(anchorPath.ACHIEVEMENTS)"
+    class="rounded block achievements clickable"
+  >
     <div class="title"><p>Achievements</p></div>
     <div class="description">
       <p>Roadmap</p>
@@ -28,7 +31,10 @@
       </div>
     </div>
   </div>
-  <div class="rounded block work clickable">
+  <div
+    (click)="scrollService.scrollToElement(anchorPath.WORK)"
+    class="rounded block work clickable"
+  >
     <div class="image">
       <img
         [src]="icons.razoomart.link"
@@ -54,7 +60,10 @@
       </div>
     </div>
   </div>
-  <div class="rounded block projects clickable">
+  <div
+    (click)="scrollService.scrollToElement(anchorPath.PROJECTS)"
+    class="rounded block projects clickable"
+  >
     <div class="title">
       <p>Projects</p>
       <img
