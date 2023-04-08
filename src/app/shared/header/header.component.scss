@@ -1,0 +1,44 @@
+@import "flex";
+@import "colors";
+@import "variables";
+
+.header {
+  height: 4.166666666666667vw;
+  padding: 1.0416666666666667vw 3.6458333333333335vw;
+  align-items: center;
+  background-color: $main-background;
+  backdrop-filter: blur(0.78125vw);
+  -webkit-backdrop-filter: blur(0.78125vw);
+
+  .element {
+    font-weight: 500;
+    font-size: 1.3541666666666667vw;
+
+    &,
+    &:hover {
+      transition: $hover-duration;
+      -webkit-transition: $hover-duration;
+    }
+  }
+
+  .element-1,
+  .element-2 {
+    color: $blue;
+
+    &:hover {
+      color: $blue-hovered;
+    }
+  }
+
+  .element-2 {
+    margin-left: 2.0833333333333335vw;
+  }
+
+  .element-3 {
+    color: $orange;
+
+    &:hover {
+      color: $orange-hovered;
+    }
+  }
+}
