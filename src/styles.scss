@@ -1,3 +1,4 @@
+@import "fonts";
 @import "variables";
 
 * {
@@ -17,4 +18,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
   line-height: 1.2;
+}
+
+a {
+  text-decoration: none;
 }
