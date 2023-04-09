@@ -1,0 +1,63 @@
+@import "flex";
+@import "colors";
+@import "variables";
+
+.about-me {
+  gap: 1.0416666666666667vw;
+
+  .block {
+    &-title p {
+      font-weight: 700;
+      font-size: 3.8541666666666665vw;
+      line-height: 4.239583333333334vw;
+      color: $main-background;
+    }
+
+    &-description p {
+      font-weight: 500;
+      font-size: 2.1875vw;
+      color: $grey;
+    }
+  }
+
+  .block-1 {
+    padding: 3.125vw;
+    height: 36.979166666666664vw;
+    background-color: $orange;
+
+    .block-title p {
+      font-size: 5vw;
+      line-height: 5vw;
+
+      span {
+        color: $grey-light;
+      }
+    }
+  }
+
+  .block-2 {
+    background-color: $blue;
+
+    .block-title {
+      width: 70%;
+    }
+  }
+
+  .block-2,
+  .block-3 {
+    padding: 2.6041666666666665vw 3.125vw;
+  }
+
+  .block-3 {
+    height: 26.197916666666668vw;
+    background-color: $green;
+
+    .block-title {
+      width: 60%;
+    }
+
+    .block-description {
+      width: 55%;
+    }
+  }
+}

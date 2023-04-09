@@ -1,5 +1,6 @@
 @import "fonts";
 @import "variables";
+@import "colors";
 
 * {
   margin: 0;
@@ -22,4 +23,9 @@ body {
 
 a {
   text-decoration: none;
+}
+
+::selection {
+  background: $global-selection-color;
+  color: $main-background;
 }

@@ -1,6 +1,7 @@
+@import "colors";
+
 $main-font-family: "SF Pro Display", "Helvetica Neue", "Helvetica", "Arial",
   sans-serif;
-$main-background: #ffffff;
 $hover-duration: 0.2s;
 
 .maxwh {
@@ -16,6 +17,22 @@ $hover-duration: 0.2s;
   width: 100%;
 }
 
+.w-a {
+  width: auto;
+}
+
 .ml-a {
   margin-left: auto;
+}
+
+.mt-a {
+  margin-top: auto;
+}
+
+.t-center {
+  text-align: center;
+}
+
+.rounded {
+  border-radius: 2.0833333333333335vw;
 }
