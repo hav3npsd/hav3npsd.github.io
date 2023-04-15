@@ -21,6 +21,10 @@ $hover-duration: 0.2s;
   width: auto;
 }
 
+.h-a {
+  height: auto;
+}
+
 .ml-a {
   margin-left: auto;
 }
@@ -35,4 +39,40 @@ $hover-duration: 0.2s;
 
 .rounded {
   border-radius: 2.0833333333333335vw;
+}
+
+.va-m {
+  vertical-align: middle;
+}
+
+.emoji-image {
+  width: 2.1875vw;
+  height: 2.1875vw;
+}
+
+.c-button {
+  width: 13.072916666666666vw;
+  height: 4.0625vw;
+
+  a {
+    border-radius: 999px;
+    border: 0.15625vw solid $grey-light;
+    background-color: transparent;
+    font-weight: 500;
+    font-size: 1.3541666666666667vw;
+    color: $white;
+    transition: $hover-duration;
+
+    &:hover {
+      transform: scale(1.05);
+      transition: $hover-duration;
+      background-color: #201f1e99;
+      color: $white;
+      border: none;
+    }
+
+    &:active {
+      transform: scale(0.99);
+    }
+  }
 }

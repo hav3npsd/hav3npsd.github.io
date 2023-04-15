@@ -19,10 +19,15 @@ body {
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
   line-height: 1.2;
+  cursor: url(assets/images/cursor.svg), auto;
 }
 
 a {
   text-decoration: none;
+
+  &:hover {
+    cursor: url(assets/images/cursor-link.svg), auto;
+  }
 }
 
 ::selection {

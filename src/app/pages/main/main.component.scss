@@ -12,7 +12,7 @@
     .section-title p {
       font-weight: 600;
       font-size: 3.8541666666666665vw;
-      color: #201f1ee5;
+      color: $dark-2;
 
       a {
         color: $purple;
@@ -25,10 +25,10 @@
       p {
         font-weight: 400;
         font-size: 2.1875vw;
-        color: #201f1eb2;
+        color: $dark-3;
 
         span {
-          color: #b064eab2;
+          color: $purple-2;
         }
       }
     }
