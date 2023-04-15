@@ -2,4 +2,18 @@
   display: flex;
   display: -webkit-flex;
   flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.flex-center {
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.flex-sp-bw {
+  justify-content: space-between;
 }

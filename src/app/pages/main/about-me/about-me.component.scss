@@ -1,0 +1,143 @@
+@import "flex";
+@import "colors";
+@import "variables";
+
+.about-me {
+  gap: 1.0416666666666667vw;
+
+  .block {
+    &-title p {
+      font-weight: 700;
+      font-size: 3.8541666666666665vw;
+      line-height: 4.239583333333334vw;
+      color: $main-background;
+    }
+
+    &-description p {
+      font-weight: 500;
+      font-size: 2.1875vw;
+      color: $grey;
+    }
+
+    &-images {
+      position: absolute;
+
+      .image {
+        position: absolute;
+      }
+    }
+  }
+
+  .block-1 {
+    padding: 3.125vw;
+    height: 36.979166666666664vw;
+    background-color: $orange;
+
+    .block-title p {
+      font-size: 5vw;
+      line-height: 5vw;
+
+      span {
+        color: $grey-light;
+      }
+    }
+  }
+
+  .block-2 {
+    background-color: $blue;
+
+    .block-title {
+      width: 70%;
+    }
+
+    .block-images {
+      width: 28.125vw;
+      height: 23.4375vw;
+      left: 70%;
+
+      .emoji {
+        width: 6.5125vw;
+        height: 6.833333333333333vw;
+      }
+
+      .image-1 {
+        left: 4vw;
+      }
+
+      .image-2 {
+        right: 0;
+      }
+
+      .image-3 {
+        right: 3.5vw;
+        top: 2vw;
+        width: 15.572916666666666vw;
+        height: 19.947916666666668vw;
+      }
+
+      .image-4 {
+        top: 15vw;
+        left: 1vw;
+      }
+
+      .image-5 {
+        right: 1vw;
+        top: 16vw;
+      }
+    }
+  }
+
+  .block-2,
+  .block-3 {
+    padding: 2.6041666666666665vw 3.125vw;
+  }
+
+  .block-3 {
+    height: 26.197916666666668vw;
+    background-color: $green;
+
+    .left {
+      width: 60%;
+    }
+
+    .right {
+      width: 40%;
+
+      .block-images {
+        width: 37vw;
+        height: 21vw;
+
+        .image {
+          top: 3vw;
+        }
+
+        .image-1 {
+          left: -9vw;
+          width: 20.427083333333332vw;
+          height: 17.927083333333332vw;
+        }
+
+        .image-2 {
+          top: 4vw;
+          left: 1.8vw;
+          width: 18.395833333333332vw;
+          height: 17.770833333333332vw;
+        }
+
+        .image-3 {
+          top: -1.5vw;
+          right: 5.5vw;
+          width: 19.645833333333332vw;
+          height: 19.645833333333332vw;
+        }
+
+        .image-4 {
+          top: 5vw;
+          right: -2vw;
+          width: 16.208333333333334vw;
+          height: 19.385416666666668vw;
+        }
+      }
+    }
+  }
+}

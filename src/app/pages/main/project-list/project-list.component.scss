@@ -1,0 +1,268 @@
+@import "colors";
+@import "flex";
+
+.project-list {
+  .title p {
+    font-size: 5vw;
+    font-weight: 700;
+    color: $dark;
+  }
+
+  .description {
+    margin-top: 1.0416666666666667vw;
+
+    p {
+      font-size: 2.1875vw;
+      font-weight: 500;
+      color: $orange;
+    }
+  }
+
+  .list {
+    margin-top: 2.6041666666666665vw;
+    gap: 1.0416666666666667vw;
+
+    .item {
+      flex-direction: column;
+
+      .title {
+        z-index: 1;
+
+        p {
+          font-weight: 600;
+          font-size: 3.8541666666666665vw;
+          color: $white;
+        }
+
+        .title-desc {
+          margin-top: 1.0416666666666667vw;
+          font-weight: 400;
+          font-size: 1.7708333333333333vw;
+        }
+      }
+
+      .images,
+      .images .image {
+        position: absolute;
+      }
+
+      .bottom {
+        z-index: 1;
+
+        .description {
+          margin-top: 0;
+
+          p {
+            font-weight: 400;
+            font-size: 1.7708333333333333vw;
+            color: $grey-dark;
+          }
+        }
+
+        .button {
+          align-self: flex-end;
+        }
+      }
+    }
+
+    .item-1,
+    .item-4,
+    .item-5 {
+      padding: 2.6041666666666665vw;
+    }
+
+    .item-2,
+    .item-3 {
+      padding: 2.0833333333333335vw;
+
+      .title {
+        p {
+          font-weight: 600;
+          font-size: 2.34375vw;
+        }
+
+        .title-desc {
+          font-weight: 400;
+          font-size: 1.3020833333333333vw;
+          color: $grey-dark;
+        }
+      }
+    }
+
+    .item-1 {
+      background-color: $aqua;
+
+      .images {
+        width: 75vw;
+        height: 26.822916666666668vw;
+        right: 2vw;
+
+        .image-1,
+        .image-4 {
+          left: 25%;
+        }
+
+        .image-1 {
+          width: 43vw;
+          top: -2vw;
+        }
+
+        .image-2,
+        .image-3 {
+          top: 30%;
+        }
+
+        .image-2,
+        .image-3 {
+          width: 34vw;
+        }
+
+        .image-3 {
+          right: 10%;
+        }
+
+        .image-4 {
+          width: 34vw;
+          bottom: -3vw;
+        }
+      }
+    }
+
+    .item-2 {
+      background-color: $purple;
+
+      .images {
+        .image-1 {
+          bottom: 0;
+          left: 5vw;
+          width: 17.28125vw;
+        }
+
+        .image-2 {
+          width: 18.479166666666666vw;
+          height: 22.958333333333332vw;
+          right: 2vw;
+        }
+      }
+    }
+
+    .item-2,
+    .item-3 {
+      .images {
+        width: 45vw;
+        height: 28vw;
+      }
+    }
+
+    .item-3 {
+      background-color: $orange;
+
+      .images {
+        .image-1 {
+          width: 14.072916666666666vw;
+          height: 17.916666666666668vw;
+          left: 20%;
+          bottom: 1vw;
+        }
+
+        .image-2 {
+          width: 16.75vw;
+          height: 21.90625vw;
+          right: 1vw;
+        }
+      }
+    }
+
+    .item-1,
+    .item-4,
+    .item-5 {
+      height: 31.25vw;
+    }
+
+    .item-2,
+    .item-3 {
+      width: 49.45%;
+      height: 31.666666666666668vw;
+    }
+
+    .item-4 {
+      background-color: $black;
+
+      .bottom .button {
+        width: auto;
+        height: auto;
+
+        a {
+          border: none;
+          align-items: flex-end;
+          color: $grey-dark;
+
+          &:hover {
+            transform: scale(1);
+            background-color: transparent;
+            cursor: url("/assets/images/arrow.svg"), auto;
+            text-decoration: line-through;
+          }
+
+          &:active {
+            transform: scale(1);
+          }
+        }
+      }
+
+      .images {
+        width: 45vw;
+        height: 30.7vw;
+        right: 0.5vw;
+
+        .image-1 {
+          bottom: 2.6041666666666665vw;
+          border-top-right-radius: 2.0833333333333335vw;
+          border-bottom-right-radius: 2.0833333333333335vw;
+        }
+
+        .image-2 {
+          left: -20%;
+          bottom: 1vw;
+          width: 15.260416666666666vw;
+          height: 15.260416666666666vw;
+        }
+      }
+    }
+
+    .item-5 {
+      background-color: $white-2;
+
+      .title {
+        p {
+          color: $dark;
+        }
+
+        .title-desc {
+          color: $dark-2;
+        }
+      }
+
+      .bottom {
+        .description p {
+          color: #201f1eb2;
+        }
+
+        .button a {
+          border-color: #201f1e99;
+          color: $dark;
+        }
+      }
+
+      .images {
+        width: 100vw;
+        height: 31.7vw;
+        left: 0.52vw;
+
+        .image {
+          bottom: 2.6041666666666665vw;
+        }
+      }
+    }
+  }
+}

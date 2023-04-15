@@ -3,10 +3,11 @@
 @import "variables";
 
 .header {
+  position: fixed;
   height: 4.166666666666667vw;
   padding: 1.0416666666666667vw 3.6458333333333335vw;
   align-items: center;
-  background-color: $main-background;
+  background: $global-header-background;
   backdrop-filter: blur(0.78125vw);
   -webkit-backdrop-filter: blur(0.78125vw);
 
@@ -23,10 +24,11 @@
 
   .element-1,
   .element-2 {
-    color: $blue;
+    color: #494949;
 
     &:hover {
-      color: $blue-hovered;
+      // color: $blue-hovered;
+      color: #000;
     }
   }
 
@@ -35,10 +37,11 @@
   }
 
   .element-3 {
-    color: $orange;
+    color: #494949;
 
     &:hover {
-      color: $orange-hovered;
+      // color: $orange-hovered;
+      color: #000;
     }
   }
 }
