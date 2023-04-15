@@ -8,7 +8,7 @@
 
   .title p {
     font-size: 2.1875vw;
-    color: #201f1eb2;
+    color: $dark-3;
   }
 
   .contact-list {
@@ -22,11 +22,21 @@
     }
 
     .item a {
-      color: #201f1ee5;
+      color: $dark-2;
     }
 
     .item span {
       color: #201f1e99;
+    }
+
+    .item-2 a span {
+      margin-left: 1.5625vw;
+      margin-right: 0.2604166666666667vw;
+
+      img {
+        width: 3.4375vw;
+        height: 2.5520833333333335vw;
+      }
     }
   }
 
@@ -35,7 +45,7 @@
       font-size: 2.1875vw;
     }
 
-    .item-1 p {
+    .item-1 p a {
       color: $green;
     }
 
