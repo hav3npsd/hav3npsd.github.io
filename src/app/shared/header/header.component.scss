@@ -3,6 +3,7 @@
 @import "variables";
 
 .header {
+  z-index: 100;
   position: fixed;
   height: 4.166666666666667vw;
   padding: 1.0416666666666667vw 3.6458333333333335vw;
@@ -22,26 +23,15 @@
     }
   }
 
-  .element-1,
-  .element-2 {
-    color: #494949;
+  .element {
+    color: $grey-2;
 
     &:hover {
-      // color: $blue-hovered;
-      color: #000;
+      color: $black;
     }
   }
 
   .element-2 {
     margin-left: 2.0833333333333335vw;
-  }
-
-  .element-3 {
-    color: #494949;
-
-    &:hover {
-      // color: $orange-hovered;
-      color: #000;
-    }
   }
 }
