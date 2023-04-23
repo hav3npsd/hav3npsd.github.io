@@ -1,4 +1,6 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { MediaLink } from '@enums/mediaLink.enums';
+import { Page } from '@enums/page.enums';
 
 @Component({
   selector: 'main-project-list',
@@ -6,4 +8,7 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
   styleUrls: ['./project-list.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class ProjectListComponent {}
+export class ProjectListComponent {
+  mediaLink = MediaLink;
+  page = Page;
+}

@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { ExtraOptions, RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
@@ -7,10 +7,16 @@ const routes: Routes = [
     loadChildren: () =>
       import('@pages/main/main.module').then((m) => m.MainModule),
   },
+  { path: '**', pathMatch: 'full', redirectTo: '' },
 ];
 
+const extraOptions: ExtraOptions = {
+  useHash: true,
+  scrollPositionRestoration: 'top',
+};
+
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, extraOptions)],
   exports: [RouterModule],
 })
 export class AppRoutingModule {}

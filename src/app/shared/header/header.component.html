@@ -2,14 +2,14 @@
   <a
     *ngIf="!showHomeButton"
     class="element element-1"
-    href="mailto:hav3n.psd@icloud.com"
+    [href]="mediaLink.MAILTO"
   >
     hav3n.psd@icloud.com
   </a>
   <a
     *ngIf="!showHomeButton"
     class="element element-2"
-    href="https://www.youtube.com/@hav3nwork"
+    [href]="mediaLink.YT_CHANNEL"
     target="_blank"
   >
     YouTube
@@ -26,11 +26,7 @@
     />
     Back to Home
   </a>
-  <a
-    class="element element-3 ml-a"
-    href="https://t.me/hav3npsd"
-    target="_blank"
-  >
+  <a class="element element-3 ml-a" [href]="mediaLink.TELEGRAM" target="_blank">
     Contact me
   </a>
 </div>

@@ -1,37 +1,9 @@
-@import "colors";
-
 .main {
   padding: 0 0.52vw 2.08vw 0.52vw;
 
   .project-list,
   .specially-thanks {
     margin-top: 5.208333333333333vw;
-  }
-
-  .specially-thanks {
-    .section-title p {
-      font-weight: 600;
-      font-size: 3.8541666666666665vw;
-      color: $dark-2;
-
-      a {
-        color: $purple;
-      }
-    }
-
-    .section-description {
-      margin-top: 1.0416666666666667vw;
-
-      p {
-        font-weight: 400;
-        font-size: 2.1875vw;
-        color: $dark-3;
-
-        span {
-          color: $purple-2;
-        }
-      }
-    }
   }
 
   .footer {

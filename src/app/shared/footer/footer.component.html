@@ -2,10 +2,10 @@
   <div class="title"><p>contacts:</p></div>
   <div class="contact-list flex">
     <div class="item item-1">
-      <a href="mailto:hav3n.psd@icloud.com">hav3n.psd@icloud.com</a>
+      <a [href]="mediaLink.MAILTO">hav3n.psd@icloud.com</a>
     </div>
     <div class="item item-2 ml-a">
-      <a class="flex" href="https://www.youtube.com/@hav3nwork" target="_blank">
+      <a class="flex" [href]="mediaLink.YT_CHANNEL" target="_blank">
         Subscribe on
         <span class="flex flex-center">
           <img
@@ -18,7 +18,7 @@
       </a>
     </div>
     <div class="item item-3">
-      <a href="https://t.me/hav3npsd" target="_blank">Telegram </a>
+      <a [href]="mediaLink.TELEGRAM" target="_blank">Telegram </a>
       <span>@hav3n.psd</span>
     </div>
   </div>
@@ -26,7 +26,7 @@
     <div class="list max-w flex flex-sp-bw">
       <div class="item item-1">
         <p>
-          <a href="https://razoomart.ru" target="_blank">razoom.art&lt;3</a>
+          <a [href]="mediaLink.RAZOOMART" target="_blank">razoom.art&lt;3</a>
         </p>
       </div>
       <div class="item item-2"><p>have a nice day :3</p></div>

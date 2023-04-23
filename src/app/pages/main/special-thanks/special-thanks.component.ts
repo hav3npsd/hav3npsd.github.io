@@ -2,11 +2,11 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { MediaLink } from '@enums/mediaLink.enums';
 
 @Component({
-  selector: 'global-footer',
-  templateUrl: './footer.component.html',
-  styleUrls: ['./footer.component.scss'],
+  selector: 'main-special-thanks',
+  templateUrl: './special-thanks.component.html',
+  styleUrls: ['./special-thanks.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class FooterComponent {
+export class SpecialThanksComponent {
   mediaLink = MediaLink;
 }

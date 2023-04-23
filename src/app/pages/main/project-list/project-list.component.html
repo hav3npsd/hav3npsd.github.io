@@ -58,7 +58,9 @@
           </p>
         </div>
         <div class="button c-button">
-          <a class="maxwh flex flex-center" href="">View case</a>
+          <a class="maxwh flex flex-center" [routerLink]="page.VODOVOZCASE">
+            View case
+          </a>
         </div>
       </div>
     </div>
@@ -77,7 +79,7 @@
         <div class="button c-button ml-a">
           <a
             class="maxwh flex flex-center"
-            href="https://youtube.com/shorts/r3yWeTIbaAM?feature=share"
+            [href]="mediaLink.YT_VIDEO_GUS_FRING"
             target="_blank"
           >
             View video
@@ -114,7 +116,7 @@
         <div class="button c-button ml-a">
           <a
             class="maxwh flex flex-center"
-            href="https://youtube.com/shorts/aFv6A1xDtSs?feature=share"
+            [href]="mediaLink.YT_VIDEO_HEIZENBERG"
             target="_blank"
           >
             View video

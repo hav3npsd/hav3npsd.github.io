@@ -6,6 +6,7 @@ import {
   ChangeDetectorRef,
 } from '@angular/core';
 import { NavigationEnd, Router } from '@angular/router';
+import { MediaLink } from '@enums/mediaLink.enums';
 import { Page } from '@enums/page.enums';
 import { Subscription } from 'rxjs';
 @Component({
@@ -17,6 +18,7 @@ import { Subscription } from 'rxjs';
 export class HeaderComponent implements OnInit, OnDestroy {
   subscription?: Subscription;
   currentUrl?: string;
+  mediaLink = MediaLink;
   page = Page;
 
   get showHomeButton(): boolean {
