@@ -1,13 +1,30 @@
 <div class="header max-w flex">
-  <a class="element element-1" href="mailto:hav3n.psd@icloud.com">
+  <a
+    *ngIf="!showHomeButton"
+    class="element element-1"
+    href="mailto:hav3n.psd@icloud.com"
+  >
     hav3n.psd@icloud.com
   </a>
   <a
+    *ngIf="!showHomeButton"
     class="element element-2"
     href="https://www.youtube.com/@hav3nwork"
     target="_blank"
   >
     YouTube
+  </a>
+  <a
+    *ngIf="showHomeButton"
+    class="element home-btn flex flex-center"
+    [routerLink]="page.MAIN"
+  >
+    <img
+      src="assets/icons/home-arrow.svg"
+      alt="back arrow image"
+      draggable="false"
+    />
+    Back to Home
   </a>
   <a
     class="element element-3 ml-a"
