@@ -1,38 +1,54 @@
 {
   "root": true,
   "ignorePatterns": ["!**/*"],
-  "plugins": ["@nrwl/nx"],
+  "plugins": ["html"],
   "overrides": [
     {
       "files": ["*.ts"],
       "extends": [
-        "plugin:@nrwl/nx/typescript",
-        "plugin:@nrwl/nx/angular",
-        "plugin:@angular-eslint/template/process-inline-templates"
+        "plugin:@angular-eslint/template/process-inline-templates",
+        "plugin:@angular-eslint/recommended",
+        "plugin:prettier/recommended",
+        "plugin:import/recommended"
       ],
       "rules": {
-        "@angular-eslint/directive-selector": [
+        "no-empty-function": "off",
+        "@angular-eslint/no-empty-lifecycle-method": "off",
+        "no-var": "error",
+        "no-console": [
           "error",
           {
-            "type": "attribute",
-            "prefix": "hav3npsd",
-            "style": "camelCase"
+            "allow": ["warn", "error"]
           }
         ],
-        "@angular-eslint/component-selector": [
+        "import/extensions": "off",
+        "import/prefer-default-export": "off",
+        "import/no-unresolved": "off",
+        "import/order": [
           "error",
           {
-            "type": "element",
-            "prefix": "hav3npsd",
-            "style": "kebab-case"
+            "groups": [
+              "builtin",
+              "external",
+              "internal",
+              ["index", "sibling", "parent"],
+              ["object"]
+            ],
+            "newlines-between": "always-and-inside-groups",
+            "pathGroupsExcludedImportTypes": ["builtin"],
+            "alphabetize": {
+              "order": "asc",
+              "caseInsensitive": true
+            }
           }
         ]
       }
     },
     {
       "files": ["*.html"],
-      "extends": ["plugin:@nrwl/nx/angular-template"],
-      "rules": {}
+      "rules": {
+        "@angular-eslint/template/no-call-expression": "warn"
+      }
     }
   ]
 }

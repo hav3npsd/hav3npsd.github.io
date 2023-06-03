@@ -3,6 +3,10 @@
     "rootDir": ".",
     "sourceMap": true,
     "declaration": false,
+    "paths": {
+      "@hav3npsd/*": ["src/app/*"],
+      "@pages/*": ["src/app/pages/*"]
+    },
     "moduleResolution": "node",
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
